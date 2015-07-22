@@ -1,0 +1,47 @@
+{{!< default}}
+<hr class="articleborder">
+
+{{#post}}
+
+<article class="art {{post_class}}">
+    
+    <header class="art-header">
+			<h2 class="art-title">{{title}}</h2>
+            <time class="art-time">{{date published_at format="MMMM Do, YYYY"}}</time>
+        </div>
+    </header>
+
+    <div class="art-body">
+		{{content}}
+    </div>
+
+</article>
+
+<footer class="footer">
+    {{#prev_post}}
+    <a href="{{url}}">← Previous post
+    </a>
+    {{/prev_post}}
+    {{#next_post}}
+    <a href="{{url}}">Next post →
+    </a>
+    {{/next_post}}
+</footer>
+
+<footer>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'twotwenties'; // required: replace example with your forum shortname
+    var disqus_identifier = '{{id}}'; // make sure to use the post.id as an identifier, otherwise disqus will use the pages url per default, which might be problematic...
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</footer>
+{{/post}}
