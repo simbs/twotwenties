@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="{{@blog.description}}">
+<meta name="author" content="{{@blog.title}}">
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans|Questrial">
+<link rel="stylesheet" type="text/css" href="{{asset 'css/style.css' }}" />
+<link rel="stylesheet" type="text/css" href="{{asset 'css/responsive.css' }}"/>
+<link rel="shortcut icon" type="image/x-icon" href="{{ asset 'img/favicon.ico' }}">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- remove this if you don't want a picturefill -->
+<script src="http://www.twotwenties.com/assets/js/picturefill.js?v=1" async></script>
+
+<script src="{{asset 'js/javascript.js' }}"></script>
+
+<!-- remove this if you don't want a pin-it button over your images -->
+<!-- Please call pinit.js only once per page -->
+<script type="text/javascript" async defer  data-pin-color="red" data-pin-height="28" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
+    
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="{{@blog.title}}">
+
+{{#if post}}
+{{#post}}
+<title>{{title}} | {{@blog.title}}</title>
+
+<meta property="og:title" content="{{title}} | {{@blog.title}}">
+<meta property="og:description" content="{{excerpt}}">
+<meta property="og:image" content="{{image}}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<!-- customize these:
+<meta name="twitter:site" content="@nyourusername">
+<meta name="twitter:creator" content="@nyourusername">
+-->
+<meta name="twitter:title" content="{{title}}">
+<meta name="twitter:description" content="{{excerpt}}">
+<meta name="twitter:image" content="{{image}}">
+{{/post}}
+{{else}}
+<title>{{@blog.title}}</title>
+
+<meta property="og:title" content="{{@blog.title}}">
+<meta property="og:description" content="{{@blog.description}}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<!-- customize these:
+<meta name="twitter:site" content="@nyourusername">
+<meta name="twitter:creator" content="@nyourusername">
+-->
+<meta name="twitter:title" content="{{@blog.title}}">
+<meta name="twitter:description" content="{{@blog.description}}">
+{{/if}}
+
+{{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+
+{{! Menu }}
+
+{{> navmenu}}
+
+{{! Everything else gets inserted here }}
+{{{body}}}
+
+<footer class="footer">
+    <div class="back-to-top"><a href="">Back to top</a></div>
+</footer>
+
+{{! Ghost outputs important scripts and data with this tag }}
+{{ghost_foot}}
+
+</body>
+</html>

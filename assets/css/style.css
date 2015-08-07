@@ -1,0 +1,647 @@
+/* Defaults
+=================== */
+
+/* Reset & Basics (Inspired by E. Meyers)
+================================================== */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, cite, code, em, img, small, strong, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, embed, figure, figcaption, footer, header, hgroup, menu, nav, section, summary, time, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, time, nav, section {
+    display: block; }
+html, body, {
+    min-height: 100%;
+}
+
+
+/* Body
+================================================== */
+html, body {
+    height: 100%;
+}
+body {
+    overflow-x: hidden;
+    font: 17px/28px ff-meta-serif-web-pro, "Georgia", serif;
+    color: #333;
+    background: #fff;
+}
+
+/* Typography
+================================================== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "proxima-nova", "helvetica neue", "helvetica", sans-serif;
+    font-weight: normal;
+    font-weight: 500;
+    color: #000;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+h2 {
+    font-size: 26px;
+    padding-bottom: 25px;
+}
+
+h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+h4 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+h5 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+p {
+    margin: 0 0 28px 0;
+}
+
+strong {
+    font-weight: bold;
+}
+em {
+    font-style: italic;
+}
+sup {
+    line-height: 0;
+}
+
+small {
+    font-size: 70%;
+}
+
+cite {
+    font-size: 80%;
+    font-style: italic;
+}
+/* Links
+================================================== */
+a {
+    color: #50abd6;
+    text-decoration: none;
+}
+a:hover {
+    color: #7bb7d3;
+}
+
+/*    Layout
+================================================== */
+/* Containers to keep content to a set width */
+.nav,
+.footer,
+.art-list,
+.abt,
+.fourohfour,
+.slideshow,
+.art,
+.articleborder,
+#disqus_thread {
+    width: 980px;
+}
+.nav,
+.art-body,
+.art,
+.art-header,
+.footer,
+.art-list,
+.abt,
+.fourohfour,
+#disqus_thread {
+    position: relative;
+    margin: 0 auto;
+}
+
+/*    Nav
+================================================== */
+.nav {
+    top: 0;
+    left: 50vw;
+    margin-left: -490px;  /* Half width of nav */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 30px;
+}
+
+#logo-1024 {display: none;}
+
+.nav-primary {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    float: left;
+    height: 30px;
+    width: 100%;
+    vertical-align: middle;
+}
+.nav-primary ul,
+.nav-primary li {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+.nav-primary li {
+    font-family: "proxima-nova", "helvetica neue", "helvetica", sans-serif;
+    font-size: 13px;
+    line-height: 30px;
+    color: #000;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    list-style: none;
+    float: left;
+    height: 30px;
+    padding: 0 14px;
+}
+.nav-primary li a {
+    color: #000;
+    display: block;
+}
+.nav-primary > li:first-child {
+    padding-left: 0; /* Remove left margin from the first nav li */
+}
+#logo {
+    padding-right: 150px;
+}
+#logo h1 {
+    font-weight: 700;
+    letter-spacing: -1px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+    text-transform: uppercase;
+    padding-bottom: 0;
+}
+.nav-primary a:hover {
+    color: #50abd6;
+}
+ul.dropdown {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    width: 100px;
+    background: white;
+    text-align: center;
+}
+ul.dropdown li {
+    height: 0;
+    width: 100%;
+    padding: 0 10px;
+    overflow: hidden;
+    border-bottom: 1px solid #f4f4f4;
+    background: white;
+}
+ul.dropdown li:last-child {
+    border-bottom: none;
+}
+.nav-primary li.selected > ul {
+    opacity: 1;
+    z-index: 9;
+}
+.nav-primary li.selected ul.dropdown li {
+    height: 30px;
+    overflow: visible;
+}
+ul.dropdown li:hover {
+    background-color: #50abd6;
+    color: #fff;
+}
+ul.dropdown li a:hover{
+    color: #fff;
+}
+.nav-buttons {
+    position: absolute !important;
+    right: 0;
+    float: right;
+    border: none;
+    outline: none;
+    vertical-align: middle;
+}
+.nav-buttons > ul > li {
+    display: block;
+    position: relative;
+    list-style: none;
+    float: left;
+    height: 30px;
+    padding: 0 4px;
+    width: 16px;
+    line-height: 30px;
+}
+.nav-buttons a {
+    display: block;
+}
+.nav-buttons img {
+    width: 16px;
+    position: relative;
+    top: 7px;
+    vertical-align: top;
+}
+
+/* Top images
+================================================== */
+
+#imgheader {
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    width: 100vw;
+    height: 60vw;
+    max-height: calc(100vh - 70px);
+}
+@media screen and (orientation: portrait) {
+    #imgheader { display: none; }
+}
+#imgheader .image {
+    position: absolute;
+    text-align: center;
+    background-color: #000;
+    overflow: hidden;
+}
+#vertical {
+    top:0;
+    left:0;
+    width: 40%;
+    height: 100%;
+}
+#imgheader .horizontal {
+    right: 0;
+    width: 60%;
+    height: 50%;
+}
+#hor-top {
+    top: 0;
+}
+#hor-bottom {
+    bottom: 0;
+}
+#imgheader .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: 1;
+}
+#imgheader .image:hover img {
+    opacity: 0.6;
+}
+#imgheader .imgheader-text {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    left: 20%;
+    width: 60%;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 0;
+}
+#imgheader .image:hover .imgheader-text {
+    z-index: 2;
+}
+#imgheader .imgheader-text h1 {
+    padding-bottom: 0;
+    font-weight: normal;
+    color: #fff;
+}
+#imgheader .imgheader-text a,
+#imgheader .imgheader-text a.hover,
+#imgheader .imgheader-text a.visited {
+    color: #fff;
+}
+#imgheader .imgheader-text p {
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    text-align: center;
+    font-style: italic;
+    font-size: 13px;
+    text-transform: bold;
+    color: #fff;
+}
+
+/*  Footer
+================================================== */
+.footer {
+    top: 20px;
+    padding: 15px 0;
+    overflow: hidden;
+    border-top:1px solid #999;
+    font-family: "proxima-nova", "helvetica neue", "helvetica", sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.back-to-top {
+    width: 45%;
+    margin: 0 auto;
+}
+.footer a {
+    margin: 0 20px;
+}
+
+/*  404 page
+================================================== */
+.fourohfour {
+    padding: 240px 0 100px;
+    text-align: center;
+}
+
+/* Index
+=================== */
+
+/*    List of Articles
+================================================== */
+
+.art-list {
+    top: 0; 
+}
+.art-list-body {
+    position: relative;
+    overflow: hidden;
+}
+.art-list-item {
+    position: relative;
+    padding: 40px 0;
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+.art-list-item:first-child {
+    border-top: 1px solid #ccc;
+}
+.art-list-item:last-child {
+    border-bottom: none;
+}
+.art-list-title {
+    padding-bottom: 10px;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 500;
+}
+.art-list-item-left {
+    margin-bottom: 10px;
+    float: left;
+    width: 30%;
+    overflow: hidden;
+}
+.art-list-time {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #999;
+}
+.art-list-title a {
+    color: #50abd6;
+}
+.art-list-title a:hover {
+    color: #7bb7d3;
+}
+.art-list-description {
+    position: relative;
+    margin-top: 5px;
+    margin-left: 0px;
+    float: left;
+    width: 100%;
+    font-style: italic;
+    font-size: 14px;
+}
+.featimg {
+    margin-left: 3%;
+    margin-bottom: 0;
+    float: right;
+    width: 67%;
+}
+.featimg img {
+    max-width: 100%;
+    max-height: 100vh;
+}
+.featimg img.center {
+    margin-left: auto;
+    margin-right:auto;
+    display: block;
+}
+
+/* Post
+============= */
+
+/*    Article
+================================================== */
+.articleborder {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    margin-left: -490px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+.art {
+    top: 40px;
+}
+/* Header */
+.art-header {
+    top: 10px;
+    left: 50%;
+    margin-left: -490px;
+    width: 100%;
+    height:100px;
+}
+.art-time,
+.art-title {
+    text-align: center;
+}
+.art-title {
+    font-size: 30px;
+    line-height: .9;
+    letter-spacing: -1px;
+    width: 100%;
+    padding-bottom:0px;
+    color: #50abd6;
+}
+.art-time {
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    padding-bottom:25px;
+    font-weight:100;
+    color: #999;
+}
+/* Body */
+.art-body {
+    position: relative;
+    width: 100%;
+    padding: 20px 0 50px;
+    line-height: 1.5em;
+    background: #fff;
+    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+    letter-spacing: 0.01rem;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+	overflow: visible;
+}
+.art-body p,
+.art-body h1, .art-body h2, .art-body h3, .art-body h4, .art-body h5, .art-body h6 {
+	width: 70%;
+	margin: 26px auto;
+}
+.art-body ul,
+.art-body ol { /* For lists in the article body */
+    width: 60%;
+    margin: 26px auto;
+}
+.art-body ul li {
+    list-style: disc;
+}
+.art-body mark {
+    background-color: #fdffb6;
+    padding: 2px;
+}
+.art-body blockquote {
+    font-size: 16px;
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+.art-body blockquote p:first-child:before {
+    color: #ccc;
+    content: "“";
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+.art-body blockquote p {
+    margin-bottom: 1.5em;
+}
+.art-body blockquote p:last-child {
+    margin-bottom: 0;
+}
+.callout { /* Callouts are like large pullquotes */
+    font-weight: bold;
+}
+.art-body img {
+    max-width: 100%;
+    max-height: 100vh;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+.art-body img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.art-body .art-reference {
+    font-size: 80%;
+    color: #999;
+    margin-top: 50px;
+}
+
+/* for posts like this one http://www.twotwenties.com/2014/09/instagblr-4/ */
+.art-body .instagblr {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 980px;
+}
+
+.art-body .instagblr img {
+    width: 50%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.art-body .instagblr .insta-1 {
+    top: 0;
+    left: 0;
+}
+.art-body .instagblr .insta-2 {
+    top: 0;
+    right: 0;
+}
+.art-body .instagblr .insta-3 {
+    bottom: 0;
+    left: 0;
+}
+.art-body .instagblr .insta-4 {
+    bottom: 0;
+    right: 0;
+}
+
+/* Home
+=============== */
+
+/* Home Page 
+================================================== */
+
+#home .art-list-body {
+    top: 20px;
+}
+#home .art-list-item:first-child {
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+/*  About page
+================================================== */
+.abt {
+  padding: 110px 0 100px;
+  list-style: none;
+}
+.abt .abt-header h2 {
+  font-size: 30px;
+  line-height: .9;
+  letter-spacing: -1px;
+  text-transform: none;
+  text-align: center;
+}
+.abt-header {
+  width: 100%;
+}
+.abt-body {
+  margin-bottom: 28px;
+}
+.abt-body img {
+  max-width: 100%;
+  max-height: 100vh;
+  margin-bottom: 26px;
+}
+.abt-body img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.abt-signoff {
+  line-height: 1.3;
+  font-style: italic;
+  color: #777;
+}

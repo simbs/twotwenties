@@ -1,0 +1,53 @@
+<nav class="nav">
+    <ul id="logo-1024">
+        <li><a style="border:none;" href="{{@blog.url}}"><h1>{{@blog.title}}</h1></a></li>
+    </ul>
+    <ul class="nav-primary js-wrap">
+		<li><a style="border:none;" id="logo" href="{{@blog.url}}"><h1>{{@blog.title}}</h1></a></li>
+    
+        <li><a href="{{ @blog.url }}/about/">About</a></li>
+		<li><a href="#">Places</a>
+			<ul class="dropdown">
+				<li><a href="{{ @blog.url }}/tag/portugal">Portugal</a></li>
+				<li><a href="{{ @blog.url }}/tag/greece">Greece</a></li>
+				<li><a href="{{ @blog.url }}/tag/france">France</a></li>
+				<li><a href="{{ @blog.url }}/tag/italy">Italy</a></li>
+				<li><a href="{{ @blog.url }}/tag/london">London</a></li>
+				<li><a href="{{ @blog.url }}/tag/germany">Germany</a></li>
+                <li><a href="{{ @blog.url }}/tag/austria">Austria</a></li>
+                <li><a href="{{ @blog.url }}/tag/switzerland">Switzerland</a></li>
+				<li><a href="{{ @blog.url }}/tag/praha">Prague</a></li>
+				<li><a href="{{ @blog.url }}/tag/museums">Museums</a></li>
+				<li><a href="{{ @blog.url }}/tag/gardens">Gardens</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Seasons</a>
+			<ul class="dropdown">
+				<li><a href="{{ @blog.url }}/tag/autumn">Autumn</a></li>
+				<li><a href="{{ @blog.url }}/tag/winter">Winter</a></li>
+				<li><a href="{{ @blog.url }}/tag/spring">Spring</a></li>
+				<li><a href="{{ @blog.url }}/tag/summer">Summer</a></li>
+			</ul>
+		</li>
+		<li><a href="#">little things</a>
+			<ul class="dropdown">
+                <li><a href="{{ @blog.url }}/tag/little-things">all</a></li>
+				<li><a href="{{ @blog.url }}/tag/jewellery">jewellery</a></li>
+				<li><a href="{{ @blog.url }}/tag/coffee">coffee</a></li>
+				<li><a href="{{ @blog.url }}/tag/clothes">clothes</a></li>
+				<li><a href="{{ @blog.url }}/tag/food">food</a></li>
+				<li><a href="{{ @blog.url }}/tag/howto">how tos</a></li>
+			</ul>
+		</li>
+        <li class="nav-buttons">
+        	<ul>
+        		<li><a href="http://www.flickr.com/photos/username" title="Flickr" target="_blank"><img nopin="nopin" src="{{ asset 'img/flickr.png'}}" alt="Flickr"></a></li>
+        		<li><a href="http://www.pinterest.com/username" title="Pinterest" target="_blank"><img nopin="nopin" src="{{ asset 'img/pinterest.png'}}" alt="Pinterest"></a></li>
+        		<li><a href="http://www.twitter.com/username" title="Twitter" target="_blank"><img nopin="nopin" src="{{ asset 'img/twitter.png'}}" alt="Twitter"></a></li>
+        		<li><a href="http://username.tumblr.com" title="Tumblr" target="_blank"><img nopin="nopin" src="{{ asset 'img/tumblr.png'}}" alt="Tumblr"></a></li>
+			<li><a href="{{ @blog.url }}/rss" title="RSS Feed" target="_blank"><img nopin="nopin" src="{{ asset 'img/rss.png' }}" alt="RSS"></a></li>
+        	</ul>
+        </li>
+    </ul>
+	
+</nav>
