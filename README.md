@@ -1,6 +1,6 @@
 # Two Twenties
 
-[Ghost](https://ghost.org/) theme [Two Twenties](www.twotwenties.com) uses, with [disqus](http://disqus.com/) comments.
+[Ghost](https://ghost.org/) theme [Two Twenties](http://www.twotwenties.com) uses, with [disqus](http://disqus.com/) comments.
 
 
 Customizing:
