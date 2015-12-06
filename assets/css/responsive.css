@@ -25,6 +25,7 @@
     }
     /* hide logo in nav-primary */
     .nav-primary > li:first-child {display: none;}
+
     #logo-1024 {
         display: block;
         margin: 0;
@@ -205,6 +206,7 @@
     .art-body ul, .art-body ol { width: 90%; }
 }
 @media only screen and (max-width: 500px) {
+    /* post list changes to one column layout */
     body {
         font-size: 15px;
         line-height: 24px;

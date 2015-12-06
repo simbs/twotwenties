@@ -253,6 +253,90 @@ ul.dropdown li a:hover{
     top: 7px;
     vertical-align: top;
 }
+
+/* Top images
+================================================== */
+
+#imgheader {
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    width: 100vw;
+    height: 60vw;
+    max-height: calc(100vh - 70px);
+}
+@media screen and (orientation: portrait) {
+    #imgheader { display: none; }
+}
+#imgheader .image {
+    position: absolute;
+    text-align: center;
+    background-color: #000;
+    overflow: hidden;
+}
+#vertical {
+    top:0;
+    left:0;
+    width: 40%;
+    height: 100%;
+}
+#imgheader .horizontal {
+    right: 0;
+    width: 60%;
+    height: 50%;
+}
+#hor-top {
+    top: 0;
+}
+#hor-bottom {
+    bottom: 0;
+}
+#imgheader .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: 1;
+}
+#imgheader .image:hover img {
+    opacity: 0.6;
+}
+#imgheader .imgheader-text {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    left: 20%;
+    width: 60%;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 0;
+}
+#imgheader .image:hover .imgheader-text {
+    z-index: 2;
+}
+#imgheader .imgheader-text h1 {
+    padding-bottom: 0;
+    font-weight: normal;
+    color: #fff;
+}
+#imgheader .imgheader-text a,
+#imgheader .imgheader-text a.hover,
+#imgheader .imgheader-text a.visited {
+    color: #fff;
+}
+#imgheader .imgheader-text p {
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    text-align: center;
+    font-style: italic;
+    font-size: 13px;
+    text-transform: bold;
+    color: #fff;
+}
+
 /*  Footer
 ================================================== */
 .footer {
@@ -478,6 +562,7 @@ ul.dropdown li a:hover{
     margin-top: 50px;
 }
 
+/* for posts like this one http://www.twotwenties.com/2014/09/instagblr-4/ */
 .art-body .instagblr {
     position: relative;
     display: block;
@@ -524,89 +609,6 @@ ul.dropdown li a:hover{
 #home .art-list-item:first-child {
     padding-top: 20px;
     border-top: 1px solid #ccc;
-}
-
-/* Top images
-================================================== */
-
-#imgheader {
-    position: relative;
-    margin: 0 auto;
-    top: 0px;
-    width: 100vw;
-    height: 60vw;
-    max-height: calc(100vh - 70px);
-}
-@media screen and (orientation: portrait) {
-    #imgheader { display: none; }
-}
-#imgheader .image {
-    position: absolute;
-    text-align: center;
-    background-color: #000;
-    overflow: hidden;
-}
-#vertical {
-    top:0;
-    left:0;
-    width: 40%;
-    height: 100%;
-}
-#imgheader .horizontal {
-    right: 0;
-    width: 60%;
-    height: 50%;
-}
-#hor-top {
-    top: 0;
-}
-#hor-bottom {
-    bottom: 0;
-}
-#imgheader .image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    opacity: 1;
-}
-#imgheader .image:hover img {
-    opacity: 0.6;
-}
-#imgheader .imgheader-text {
-    position: absolute;
-    top: 50%;
-    margin-top: -30px;
-    left: 20%;
-    width: 60%;
-    height: 60px;
-    text-align: center;
-    vertical-align: middle;
-    z-index: 0;
-}
-#imgheader .image:hover .imgheader-text {
-    z-index: 2;
-}
-#imgheader .imgheader-text h1 {
-    padding-bottom: 0;
-    font-weight: normal;
-    color: #fff;
-}
-#imgheader .imgheader-text a,
-#imgheader .imgheader-text a.hover,
-#imgheader .imgheader-text a.visited {
-    color: #fff;
-}
-#imgheader .imgheader-text p {
-    margin-right: auto;
-    margin-left: auto;
-    width: 60%;
-    text-align: center;
-    font-style: italic;
-    font-size: 13px;
-    text-transform: bold;
-    color: #fff;
 }
 
 /*  About page
