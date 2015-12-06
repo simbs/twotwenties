@@ -10,7 +10,7 @@
 
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans|Questrial">
 <link rel="stylesheet" type="text/css" href="{{asset 'css/style.css' }}" />
-<link rel="stylesheet" type="text/css" href="{{asset 'css/responsive.css' }}" />
+<link rel="stylesheet" type="text/css" href="{{asset 'css/responsive.css' }}"/>
 <link rel="shortcut icon" type="image/x-icon" href="{{ asset 'img/favicon.ico' }}">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -26,16 +26,16 @@
 <!-- Please call pinit.js only once per page -->
 <script type="text/javascript" async defer  data-pin-color="red" data-pin-height="28" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
     
-<!-- Twitter Card -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="{{@blog.title}}">
+
 {{#if post}}
 {{#post}}
 <title>{{title}} | {{@blog.title}}</title>
 
-<meta property="og:type" content="article">
 <meta property="og:title" content="{{title}} | {{@blog.title}}">
 <meta property="og:description" content="{{excerpt}}">
 <meta property="og:image" content="{{image}}">
-<meta property="og:site_name" content="{{@blog.title}}">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
@@ -48,10 +48,8 @@
 {{else}}
 <title>{{@blog.title}}</title>
 
-<meta property="og:type" content="article">
 <meta property="og:title" content="{{@blog.title}}">
 <meta property="og:description" content="{{@blog.description}}">
-<meta property="og:site_name" content="{{@blog.title}}">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary">

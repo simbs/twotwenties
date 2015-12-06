@@ -1,8 +1,5 @@
 /*  Responsive
 ================================================== */
-@media screen and (orientation: portrait) {
-    #imgheader { display: none; }
-}
 @media only screen and (max-width: 1024px) {
     /* Set all of the 980 containers to flexible width */
     /* change nav bar to side menu */
@@ -214,4 +211,13 @@
     } 
     .back-to-top { width: 50%; }
     .art-body { font-size: 13px; }
+    .nav-primary li {
+        height: 40px;
+        line-height: 40px;
+        font-size: 17px;
+    }
+    ul.dropdown {top: 40px;}
+    .nav-primary li.selected ul.dropdown li {height: 40px;}
+    .nav-buttons > ul > li {height: 40px;}
+    
 }

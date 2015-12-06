@@ -537,6 +537,9 @@ ul.dropdown li a:hover{
     height: 60vw;
     max-height: calc(100vh - 70px);
 }
+@media screen and (orientation: portrait) {
+    #imgheader { display: none; }
+}
 #imgheader .image {
     position: absolute;
     text-align: center;
