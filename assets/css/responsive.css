@@ -12,7 +12,7 @@
     #disqus_thread {
         width: 90vw;
     }
-    .footer {
+    footer {
         width:100vw;
     }
     .art-body .instagblr {
@@ -160,7 +160,7 @@
     #imgheader {
         max-height: calc(100vh - 50px);
     }
-    .footer {
+    footer {
         padding: 15px 0;
     }
     nav.pagination {

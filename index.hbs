@@ -4,21 +4,26 @@
           <ul class="art-list-body">
             {{#foreach posts }}
             <li class="art-list-item">
-                <div class="art-list-item-left">
-                    <h2 class="art-list-title"><a href="{{ @blog.url }}{{ url }}">{{ title }}</a></h2>
-                    <div class="art-list-time">{{date published_at format="MMMM Do, YYYY"}}</div>
-                </div>
-                <p class="featimg"><a href="{{ @blog.url }}{{ url }}"><img src={{image}} class="center js-srcset"></a></p>
-				<div class="art-list-item-left">
-					<p class="art-list-description">{{excerpt words="30"}}...</p>
-				</div>
-					
+                <section class="art-list-item-left">
+                    <h2 class="art-list-title">
+                        <a href="{{ @blog.url }}{{ url }}">{{ title }}</a>
+                    </h2>
+                    <time class="art-list-time">{{date published_at format="MMMM Do, YYYY"}}</time>
+                </section>
+                <p class="featimg">
+                    <a href="{{ @blog.url }}{{ url }}">
+                        <img src={{image}} class="center js-srcset">
+                    </a>
+                </p>
+                <section class="art-list-item-left">
+                    <p class="art-list-description">{{excerpt words="30"}}...</p>
+                </section>
             </li>
             {{/foreach}}
           </ul>
         </nav>
     </div>
 
-<footer class="footer">
+<footer>
 {{pagination}}
 </footer>

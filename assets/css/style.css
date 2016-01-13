@@ -101,7 +101,7 @@ a:hover {
 ================================================== */
 /* Containers to keep content to a set width */
 .nav,
-.footer,
+footer,
 .art-list,
 .abt,
 .fourohfour,
@@ -115,7 +115,7 @@ a:hover {
 .art-body,
 .art,
 .art-header,
-.footer,
+footer,
 .art-list,
 .abt,
 .fourohfour,
@@ -339,7 +339,7 @@ ul.dropdown li a:hover{
 
 /*  Footer
 ================================================== */
-.footer {
+footer {
     top: 20px;
     padding: 15px 0;
     overflow: hidden;
@@ -353,7 +353,7 @@ ul.dropdown li a:hover{
     width: 45%;
     margin: 0 auto;
 }
-.footer a {
+footer a {
     margin: 0 20px;
 }
 
